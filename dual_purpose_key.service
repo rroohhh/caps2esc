@@ -1,0 +1,11 @@
+[Unit]
+Description=dual purpose uinput hack
+
+[Service]
+ExecStart=/usr/local/bin/caps2esc
+ExecStop=/usr/bin/killall -9 caps2esc
+Restart=no
+
+[Install]
+WantedBy=multi-user.target
+
